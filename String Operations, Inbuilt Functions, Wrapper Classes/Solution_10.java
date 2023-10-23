@@ -39,7 +39,6 @@ public class Solution_10 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        sc.close();
 
         int a = sc.nextInt();
         if (a > n || a < 0) {
@@ -51,17 +50,19 @@ public class Solution_10 {
             System.out.println("Error: Array Boundary exceeded");
             return;
         }
+        sc.close();
 
         if (a >= 0 && a < arr.length) {
             Arrays.sort(arr, a, b);
-            System.out.print("After sorting: [");
-            for (int i = 0; i < arr.length; i++) {
-                if (i == arr.length - 1) {
-                    System.out.print(arr[i]);
-                } else
-                    System.out.print(arr[i] + ", ");
-            }
-            System.out.print("]");
+            // System.out.print("After sorting: [");
+            // for (int i = 0; i < arr.length; i++) {
+            // if (i == arr.length - 1) {
+            // System.out.print(arr[i]);
+            // } else
+            // System.out.print(arr[i] + ", ");
+            // }
+            // System.out.print("]");
+            System.out.println(Arrays.toString(arr));
         }
 
     }
